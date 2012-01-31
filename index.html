@@ -1,85 +1,96 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset='utf-8'>
+    <head>
+        <title>.htTool</title>
+        <link rel="stylesheet" type="text/css" href="css/screen.css" />
+    </head>
+    <body>
+        <form method="post">
+            <div class="info">
+                <h1>htTool</h1>
+                <img src="images/logo.png" alt="htTool logo" width="262" height="262" />
+                <h2>What is this?</h2>
+                <p>
+                    This is a small tool to help you with generating your .htaccess file. It's a collection of tips,
+                    tricks and techniques used in .htaccess files to provide functionality or boost performance.
+                </p>
+                <h2>How does it work?</h2>
+                <p>
+                    Just enter the URL of the site you want to create the rules for and check the options you wish to
+                    use. When done, you can copy/paste your generated .htaccess information in your .htaccess file.
+                </p>
+                <h2>Hey, you missed a spot!</h2>
+                <p>
+                    Wait, what? Where? If you want to contribute with some tips and tricks of your own, or want to
+                    improve some of the techniques described here, <a href="#" rel="external">Feel Free To Fork™</a>
+                    this site on <a href="#">github</a> and make a pull request.
+                </p>
+                <!-- Donate -->
+                <h2>This is a very useful tool!</h2>
+                <p>
+                    Like this tool? That's nice to hear! If you realy like it, please consider buying me beer!
+                </p>
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----" />
+                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+                    <img alt="" border="0" src="https://www.paypalobjects.com/nl_NL/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+                <!-- End donate code -->
+            </div>
+            <div class="options">
+                <h3>URL:</h3>
+                <input type="text" placeholder="The URL of your site" id="url" />
+                <h3>Options:</h3>
+                <label>
+                    <input type="checkbox" checked="checked" id="redirectwww" /> Redirect non-www to www
+                </label>
+                <label>
+                    <input type="checkbox" checked="checked" id="redirectsitemap" /> Redirect /sitemap.xml to /sitemapxml/
+                </label>
+                <label>
+                    <input type="checkbox" checked="checked" id="forceie" /> Force IE to the latest render engine
+                </label>
+                <label>
+                    <input type="checkbox" checked="checked" id="compress" /> Compress text, HTML, JavaScript, CSS &amp; XML
+                </label>
+                <label>
+                    <input type="checkbox" checked="checked" id="cache" /> Cache files
+                </label>
+                <label>
+                    <input type="checkbox" checked="checked" id="videomime" /> Add mime-types for videofiles
+                </label>
+                <label>
+                    <input type="checkbox" checked="checked" id="forcedownload" /> Force media downloads
+                </label>
+                <label>
+                    <input type="checkbox" checked="checked" id="customerror" /> Custom error documents
+                </label>
+                <label>
+                    <input type="checkbox" checked="checked" id="hotlinking" /> Prevent hotlinking
+                </label>
+            </div>
+        </form>
+        <h1>Your generated .htaccess code:</h1>
+        <code id="output">
 
-  <title>kanduvisla/httool @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #333333;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #cccccc; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #cccccc; }
-    h3 { text-align: center; color: #cccccc; }
-    a { color: #cccccc; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
-</head>
-
-<body>
-  <a href="https://github.com/kanduvisla/httool"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="https://github.com/kanduvisla/httool/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/kanduvisla/httool/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="https://github.com/kanduvisla/httool">httool</a>
-      <span class="small">by <a href="https://github.com/kanduvisla">kanduvisla</a></span></h1>
-
-    <div class="description">
-      a tool to create htaccess files
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-      <h2>Contact</h2>
-      <p>Giel Berkers (info@gielberkers.com)<br/>      </p>
-    
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/kanduvisla/httool/zipball/master">zip</a> or
-      <a href="https://github.com/kanduvisla/httool/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/kanduvisla/httool</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/kanduvisla/httool">kanduvisla/httool</a>
-    </div>
-
-  </div>
-
-</body>
+        </code>
+        <h1>Thank you!</h1>
+        <p class="thanks">
+            Special thanks go out to:
+            <a href="http://edrackham.com/apache/top-10-htaccess-tips-and-tricks/" rel="external">Ed Rackham</a>,
+            <a href="http://www.projectamplify.com/redirect-non-www-to-www.html" rel="external">Amplify</a>,
+            <a href="http://www.symphony-cms.com" rel="external">Symphony CMS</a>,
+            <a href="http://mediaelementjs.com/" rel="external">MediaElement.js</a>,
+            <a href="http://www.askapache.com/htaccess/apache-speed-cache-control.html" rel="external">AskApache.com</a>,
+            <a href="http://html5boilerplate.com/" rel="external">HTML5 Boilerplate</a>,
+            <a href="http://www.gielberkers.com" rel="external">Giel Berkers</a>,
+            <a href="#" rel="external">Your Name?</a>
+        </p>
+        <script type="text/javascript" src="js/functions.js"></script>
+        <script type="text/javascript" src="js/httool.js"></script>
+        <a href="#" rel="external" class="fork">
+            <img src="images/fork.png" alt="Fork me on github" width="310" height="179" />
+        </a>
+    </body>
 </html>

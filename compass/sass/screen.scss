@@ -1,0 +1,131 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+html {
+    @include background-image(linear-gradient(#666, #333));
+    background-attachment: fixed;
+    padding: 40px;
+    font-family: "Trebuchet MS", Trebuchet, Helvetica, Arial;
+    font-size: 12px;
+}
+
+body {
+    width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, .5);
+    border: 1px solid rgba(255, 255, 255, .5);
+    @include border-radius(5px);
+}
+
+div.info {
+    width: 260px;
+    float: right;
+    h1 {
+        display: none;
+    }
+    input {
+        margin-left: 85px;
+    }
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+    color: #f0f;
+    font-size: 20px;
+    font-family: consolas, monospace;
+}
+
+h1 {
+    clear: both;
+}
+
+h2, h3 {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+h3 {
+    font-size: 12px;
+}
+
+p {
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 18px;
+    a {
+        color: #f0f;
+        @include transition-property(color);
+        @include transition-duration(0.25s);
+        &:hover {
+            color: #fff;
+        }
+    }
+}
+
+a.fork {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+code {
+    display: block;
+    clear: both;
+    color: #fff;
+    font-family: Consolas, monospace;
+    font-size: 12px;
+    white-space: pre;
+    overflow: auto;
+    background: rgba(255, 255, 255, .25);
+    padding: 10px;
+    @include box-shadow(inset 2px 2px 6px rgba(0, 0, 0, .35));
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
+    span.comment {
+        color: #c8c;
+    }
+}
+
+input[type=text]
+{
+    display: block;
+    background: rgba(0, 0, 0, .5);
+    border: 1px solid rgba(255, 255, 255, .5);
+    @include border-radius(5px);
+    padding: 5px;
+    width: 310px;
+    color: #fff;
+    margin-bottom: 5px;
+    @include transition-property(border-color);
+    @include transition-duration(0.25s);
+    &:hover {
+        border: 1px solid #fff;
+    }
+}
+
+label {
+    background: rgba(255, 255, 255, .25);
+    padding: 5px;
+    display: block;
+    width: 310px;
+    margin-bottom: 5px;
+    @include border-radius(5px);
+    color: #fff;
+    cursor: pointer;
+    @include transition-property(background);
+    @include transition-duration(0.25s);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .5);
+    &:hover {
+        background: rgba(255, 255, 255, .5);
+    }
+}
+
+p.thanks {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
