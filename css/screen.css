@@ -1,194 +1,56 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; }
 
-body {
-  line-height: 1; }
+body { line-height: 1; }
 
-ol, ul {
-  list-style: none; }
+ol, ul { list-style: none; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+table { border-collapse: collapse; border-spacing: 0; }
 
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle; }
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
 
-q, blockquote {
-  quotes: none; }
-  q:before, q:after, blockquote:before, blockquote:after {
-    content: "";
-    content: none; }
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
 
-a img {
-  border: none; }
+a img { border: none; }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block; }
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
-html {
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #333333));
-  background-image: -webkit-linear-gradient(#666666, #333333);
-  background-image: -moz-linear-gradient(#666666, #333333);
-  background-image: -o-linear-gradient(#666666, #333333);
-  background-image: -ms-linear-gradient(#666666, #333333);
-  background-image: linear-gradient(#666666, #333333);
-  background-attachment: fixed;
-  padding: 40px;
-  font-family: "Trebuchet MS", Trebuchet, Helvetica, Arial;
-  font-size: 12px; }
+html { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #333333)); background-image: -webkit-linear-gradient(#666666, #333333); background-image: -moz-linear-gradient(#666666, #333333); background-image: -o-linear-gradient(#666666, #333333); background-image: -ms-linear-gradient(#666666, #333333); background-image: linear-gradient(#666666, #333333); background-attachment: fixed; padding: 40px; font-family: "Trebuchet MS", Trebuchet, Helvetica, Arial; font-size: 12px; }
 
-body {
-  width: 600px;
-  margin: auto;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px; }
+::selection, ::-moz-selection { background: #606; color: #fff; text-shadow: 1px 1px 1px #000; }
 
-div.info {
-  width: 260px;
-  float: right; }
-  div.info h1 {
-    display: none; }
-  div.info input {
-    margin-left: 85px; }
+body { width: 600px; margin: auto; padding: 20px; background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(255, 255, 255, 0.5); -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; }
 
-h1, h2, h3 {
-  margin: 10px 0;
-  color: #f0f;
-  font-size: 20px;
-  font-family: consolas, monospace; }
+div.info { width: 260px; float: right; }
+div.info h1 { display: none; }
+div.info input { margin-left: 85px; }
 
-h1 {
-  clear: both; }
+div.tweet { margin: 10px 0; }
 
-h2, h3 {
-  font-size: 16px;
-  margin-bottom: 3px; }
+h1, h2, h3 { margin: 10px 0; color: #f0f; font-size: 20px; font-family: consolas, monospace; }
 
-h3 {
-  font-size: 12px; }
+h1 { clear: both; }
 
-p {
-  color: #fff;
-  margin-bottom: 10px;
-  line-height: 18px; }
-  p a {
-    color: #f0f;
-    -moz-transition-property: color;
-    -webkit-transition-property: color;
-    -o-transition-property: color;
-    transition-property: color;
-    -moz-transition-duration: 0.25s;
-    -webkit-transition-duration: 0.25s;
-    -o-transition-duration: 0.25s;
-    transition-duration: 0.25s; }
-    p a:hover {
-      color: #fff; }
+h2, h3 { font-size: 16px; margin-bottom: 3px; }
 
-a.fork {
-  position: fixed;
-  top: 0;
-  right: 0; }
+h3 { font-size: 12px; }
 
-code {
-  display: block;
-  clear: both;
-  color: #fff;
-  font-family: Consolas, monospace;
-  font-size: 12px;
-  white-space: pre;
-  overflow: auto;
-  background: rgba(255, 255, 255, 0.25);
-  padding: 10px;
-  -moz-box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.35);
-  -webkit-box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.35);
-  -o-box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.35);
-  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.35);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); }
-  code span.comment {
-    color: #c8c; }
+p { color: #fff; margin-bottom: 10px; line-height: 18px; }
+p a { color: #f0f; -moz-transition-property: color; -webkit-transition-property: color; -o-transition-property: color; transition-property: color; -moz-transition-duration: 0.25s; -webkit-transition-duration: 0.25s; -o-transition-duration: 0.25s; transition-duration: 0.25s; }
+p a:hover { color: #fff; }
 
-input[type=text] {
-  display: block;
-  background: rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  padding: 5px;
-  width: 310px;
-  color: #fff;
-  margin-bottom: 5px;
-  -moz-transition-property: border-color;
-  -webkit-transition-property: border-color;
-  -o-transition-property: border-color;
-  transition-property: border-color;
-  -moz-transition-duration: 0.25s;
-  -webkit-transition-duration: 0.25s;
-  -o-transition-duration: 0.25s;
-  transition-duration: 0.25s; }
-  input[type=text]:hover {
-    border: 1px solid #fff; }
+em.tip { color: #c8c; position: relative; top: -10px; font-style: italic; }
 
-label {
-  background: rgba(255, 255, 255, 0.25);
-  padding: 5px;
-  display: block;
-  width: 310px;
-  margin-bottom: 5px;
-  -moz-border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -o-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -khtml-border-radius: 5px;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  -moz-transition-property: background;
-  -webkit-transition-property: background;
-  -o-transition-property: background;
-  transition-property: background;
-  -moz-transition-duration: 0.25s;
-  -webkit-transition-duration: 0.25s;
-  -o-transition-duration: 0.25s;
-  transition-duration: 0.25s;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
-  label:hover {
-    background: rgba(255, 255, 255, 0.5); }
+a.fork { position: fixed; top: 0; right: 0; }
 
-p.thanks {
-  margin-top: 10px;
-  margin-bottom: 0; }
+code { display: block; clear: both; color: #fff; font-family: Consolas, monospace; font-size: 12px; white-space: pre; overflow: auto; background: rgba(255, 255, 255, 0.25); padding: 10px; -moz-box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.35); -webkit-box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.35); -o-box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.35); box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.35); text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); }
+code span.comment { color: #c8c; }
+
+input[type=text] { display: block; background: rgba(0, 0, 0, 0.5); border: 1px solid rgba(255, 255, 255, 0.5); -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; padding: 5px; width: 310px; color: #fff; margin-bottom: 5px; -moz-transition-property: border-color; -webkit-transition-property: border-color; -o-transition-property: border-color; transition-property: border-color; -moz-transition-duration: 0.25s; -webkit-transition-duration: 0.25s; -o-transition-duration: 0.25s; transition-duration: 0.25s; }
+input[type=text]:hover { border: 1px solid #fff; }
+
+label { background: rgba(255, 255, 255, 0.25); padding: 5px; display: block; width: 310px; margin-bottom: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; -o-border-radius: 5px; -ms-border-radius: 5px; -khtml-border-radius: 5px; border-radius: 5px; color: #fff; cursor: pointer; -moz-transition-property: background; -webkit-transition-property: background; -o-transition-property: background; transition-property: background; -moz-transition-duration: 0.25s; -webkit-transition-duration: 0.25s; -o-transition-duration: 0.25s; transition-duration: 0.25s; text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+label:hover { background: rgba(255, 255, 255, 0.5); }
+
+p:last-of-type { margin-top: 10px; margin-bottom: 0; }
